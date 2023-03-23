@@ -250,3 +250,16 @@ test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 2774524
+Thu 23 Mar 2023 09:20:52 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld: /tmp/ccF4RStm.o: in function `cleanList':
+test.c:(.text+0x234): undefined reference to `popFront'
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld: /tmp/ccF4RStm.o: in function `test_pushcurrent':
+test.c:(.text+0x8d4): undefined reference to `pushCurrent'
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld: test.c:(.text+0x929): undefined reference to `pushCurrent'
+/nix/store/039g378vc3pc3dvi9dzdlrd0i4q93qwf-binutils-2.39/bin/ld: /tmp/ccF4RStm.o: in function `pushBack':
+test.c:(.text+0x169): undefined reference to `pushCurrent'
+collect2: error: ld returned 1 exit status
+Compilation failed
+e99124f

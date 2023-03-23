@@ -154,6 +154,7 @@ void * popCurrent(List * list) {
   return dato;
 }
 */
+
 void * popCurrent(List * list) {
   void* dato = NULL;
   
@@ -187,7 +188,9 @@ void * popCurrent(List * list) {
   return dato;
 }
 
+
 void cleanList(List * list) {
     while (list->head != NULL) {
         popFront(list);
     }
+}
