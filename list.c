@@ -134,9 +134,12 @@ void * popCurrent(List * list) {
 
   
   dato =  list->current->data;
-  list->current = list->current->next;
-  list->current->prev->prev->next = list->current->next;
-  list->current->next->prev->prev = list->current->prev;
+  Node *aux = createNode(dato);
+
+  aux = list->current->next;
+  list->current->prev->next = aux;
+  aux->prev = list->current->prev;
+  list->current = aux;
   
   
   return dato;
