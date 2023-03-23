@@ -129,12 +129,12 @@ void * popCurrent(List * list) {
     aux = list->tail->data;
     list->tail->prev->next = NULL;
     
-
     return aux;
   }
+    aux =  list->current->data;
+
   list->current->prev->next = list->current->next;
   list->current->next->prev = list->current->prev;
-  aux =  list->current->data;
     
   return aux;
 }
