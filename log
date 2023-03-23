@@ -280,3 +280,9 @@ test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 37852d6
+Thu 23 Mar 2023 09:22:38 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  12|0
+total_score: 70/70
+0c40db5

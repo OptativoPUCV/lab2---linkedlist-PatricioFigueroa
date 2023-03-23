@@ -193,3 +193,4 @@ void cleanList(List * list) {
     while (list->head != NULL) {
         popFront(list);
     }
+}
