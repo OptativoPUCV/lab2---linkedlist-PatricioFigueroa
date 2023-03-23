@@ -263,3 +263,20 @@ test.c:(.text+0x169): undefined reference to `pushCurrent'
 collect2: error: ld returned 1 exit status
 Compilation failed
 e99124f
+Thu 23 Mar 2023 09:22:26 PM UTC: 
+ list.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+test.c: In function ‘cleanList’:
+test.c:448:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:468:1: error: expected declaration or statement at end of input
+  468 | }
+      | ^
+At top level:
+test.c:448:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  448 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+37852d6
