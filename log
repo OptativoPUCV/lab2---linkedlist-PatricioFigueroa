@@ -177,3 +177,17 @@ Thu 23 Mar 2023 08:48:31 PM UTC:
  tests:  11|1
 total_score: 55/70
 f31f75a
+Thu 23 Mar 2023 08:53:19 PM UTC: 
+ list.c | 28 ++++++++++++----------------
+ 1 file changed, 12 insertions(+), 16 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:118:9: error: unused variable ‘aux’ [-Werror=unused-variable]
+  118 |   Node *aux = createNode(dato);
+      |         ^~~
+list.c:118:15: error: ‘dato’ is used uninitialized [-Werror=uninitialized]
+  118 |   Node *aux = createNode(dato);
+      |               ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+37ecb3b
